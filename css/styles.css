@@ -574,7 +574,7 @@ footer {
   background-color: var(--brand-color-background);
   color:var(--brand-color-white);
   line-height: 1.07;
-  
+
 }
 .subscribe-form{
   display: flex;
@@ -599,6 +599,7 @@ footer {
   opacity: 1;
   transition-property: transform, opacity, background-color;
   transition-duration: 500ms;
+  padding: 40px;
 }
 .is-hidden {
   visibility: hidden;
