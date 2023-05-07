@@ -643,3 +643,75 @@ footer {
   background-color: var(--brand-color-one);
   fill: var(--brand-color-white);
 }
+.order-form h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  line-height: 1.0;
+  text-align: center;
+}
+.label-order{
+  position: relative;
+  /*ikony-absolute w labelu-reelative */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.label-order input {
+  padding-left: 42px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 12px;
+}
+
+.label-order svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 11px;
+  margin-left: 11px;
+  fill: var(--brand-color-text-black);
+}
+
+.label-order div {
+  /* aby div byl nad inputem */
+  font-size: 12px;
+  color: var(--brand-color-grey);
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.label-order textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  height: 7.5rem;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* Zmiana koloru form na hoover i focus  */
+
+.label-order input:hover,.label-order input:focus,
+.label-order input:hover + svg,
+.label-order input:focus + svg {
+  border-color: var(--brand-color-one);
+  fill: var(--brand-color-one);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-order textarea:hover,
+.label-order textarea:focus {
+  border-color: var(--brand-color-one);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
