@@ -655,6 +655,10 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  font-size: 12px;
+  color: var(--brand-color-grey);
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
 .label-order input {
@@ -663,6 +667,10 @@ footer {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   font-size: 12px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline:none;
 }
 
 .label-order svg {
@@ -674,13 +682,6 @@ footer {
   fill: var(--brand-color-text-black);
 }
 
-.label-order div {
-  font-size: 12px;
-  color: var(--brand-color-grey);
-  margin-top: 12px;
-  margin-bottom: 4px;
-}
-
 .label-order textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -689,8 +690,11 @@ footer {
   letter-spacing: 0.01em;
   padding: 12px 16px;
   height: 7.5rem;
-  outline: none;
+  outline:none;
   margin-bottom: 10px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Zmiana koloru form na hoover i focus  */
@@ -701,22 +705,15 @@ footer {
 .label-order input:focus + svg {
   border-color: var(--brand-color-one);
   fill: var(--brand-color-one);
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-order textarea:hover,
 .label-order textarea:focus {
   border-color: var(--brand-color-one);
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-order textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 
 .btn-form-send {
   display: block;
