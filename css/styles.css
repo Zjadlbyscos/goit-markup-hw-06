@@ -670,7 +670,7 @@ footer {
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline:none;
+  outline: none;
 }
 
 .label-order svg {
@@ -690,7 +690,7 @@ footer {
   letter-spacing: 0.01em;
   padding: 12px 16px;
   height: 7.5rem;
-  outline:none;
+  outline: none;
   margin-bottom: 10px;
   transition-property: border-color;
   transition-duration: 250ms;
